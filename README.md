@@ -1,2 +1,2 @@
-# ubiquitous-pancake
-Code-quiz
+# Code-quiz
+
