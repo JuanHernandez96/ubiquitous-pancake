@@ -4,6 +4,8 @@ let questionContainerEl = document.getElementById("question-holder")
 
 const questionEl = document.getElementById("question");
 const answerButtonEl = document.getElementById("answers")
+
+// questions that should show up once code is up and running
 const questions = [
     {
         question: 'Commonly used data types DO Not include:',
@@ -16,7 +18,7 @@ const questions = [
     }
 ]
 
-// removes ids to show up
+// adds a hide id to to the start button and removes other hide id's so questions and answers can populate
 function addingRemoving() {
     var questionEl = document.getElementById("question-holder")
     questionEl.classList.remove("hide")
@@ -69,8 +71,10 @@ function timer() {
       document.getElementById("testTest").innerHTML = counter;
       counter--;
       if (counter < 0) {
+        //   once timer hits 0 clearinterval will stop the timer so it doesnt go into the negative
         clearInterval(currentTimer);
         document.getElementById("testTest").style.color = "red";
+        // after timer hits 0 then the page will change to highscores html
         window.location.href="hightscores.html"
       }
     }, 1000);
