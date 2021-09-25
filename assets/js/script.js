@@ -43,7 +43,7 @@ function sendNextQuestion() {
 }
 
 function showNextQuestion() {
-    questionEl.innerHTML = questions.question;
+    questionEl.innerHTML = questions[0].question;
 }
 
 function chooseAnswer() {
